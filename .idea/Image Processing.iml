@@ -3,8 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv1" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.11 virtualenv at E:\Studia\Przetwarzanie obrazów\Programy\Image Processing\.venv" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Image Processing)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
