@@ -2,7 +2,6 @@ import numpy as np
 from scipy.signal import convolve2d
 import matplotlib.pyplot as plt
 
-# macierz obrazu
 f = np.array([
     [255,255,255,255,255,255,255],
     [255,255,255,255,255,255,255],
@@ -13,15 +12,12 @@ f = np.array([
     [255,255,255,255,255,255,255]
 ], dtype=float)
 
-# filtry
 h1 = np.array([[1],[-1],[0]])
 h2 = np.array([[0],[1],[-1]])
 
-# sploty
-conv1 = convolve2d(f, h1, mode='same', boundary='fill', fillvalue=0)
-conv2 = convolve2d(f, h2, mode='same', boundary='fill', fillvalue=0)
+conv1 = convolve2d(f, h1, mode='same', boundary='symm', fillvalue=0)
+conv2 = convolve2d(f, h2, mode='same', boundary='symm', fillvalue=0)
 
-# wizualizacja
 fig, axs = plt.subplots(1, 3, figsize=(10,4))
 axs[0].imshow(f, cmap='gray')
 axs[0].set_title('Oryginał f')
